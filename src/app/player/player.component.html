@@ -1,0 +1,6 @@
+<li [class.selected]="player === selectedPlayer"
+(click)="onSelect(player)">
+
+    <span class="badge">{{player.player_id}}</span> {{player.firstname}} {{player.lastname}}
+
+</li>

@@ -1,0 +1,18 @@
+<h2>My Players</h2>
+<ul class="players">
+  <li *ngFor = "let player of players" >
+    <app-player [player]="player"></app-player>
+    <button class="delete" title="delete player">x</button>
+  </li>
+  <button class="deleteAll" title="delete player"
+  (click)="deletePlayers()">Delete all</button>
+  </ul>
+  <app-add-player [reload]="reload" (reloadChanged)="reloadPlayers()"></app-add-player>
+
+
+
+
+
+
+
+
